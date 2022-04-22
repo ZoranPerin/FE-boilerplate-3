@@ -1,0 +1,122 @@
+.align {
+
+    &-left {
+    	text-align: left;
+    }
+
+    &-right {
+    	text-align: right;
+    }
+
+    &-center {
+    	text-align: center;
+    }
+
+    &-justify {
+    	text-align: justify;
+    }
+
+}
+
+.text {
+
+    &-uppercase {
+    	text-transform: uppercase;
+    }
+
+    &-lowercase {
+    	text-transform: lowercase;
+    }
+
+    &-capitalize {
+    	text-transform: capitalize;
+    }
+
+}
+
+
+.margin {
+
+	@each $position in $positions {
+
+		&-#{$position} {
+
+			@each $value in $values {
+
+				&-#{$value} {
+					margin-#{$position}: #{$value}px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.padding {
+
+	@each $position in $positions {
+
+		&-#{$position} {
+
+			@each $value in $values {
+
+				&-#{$value} {
+					padding-#{$position}: #{$value}px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.responsive-img {
+    @include responsive-img();
+}
+
+.mobile {
+
+    &-hide {
+
+        @include breakpoint(sm) {
+            display: none !important;
+        }
+
+    }
+
+    &-show {
+
+        display: none;
+
+        @include breakpoint(sm) {
+            display: block;
+        }
+
+    }
+
+}
+
+.flex {
+
+	&-start {
+		@include flex(flex, row, wrap, flex-start, center);
+	}
+
+	&-space {
+		@include flex(flex, row, wrap, space-between, center);
+	}
+
+    &-around {
+		@include flex(flex, row, wrap, space-around, center);
+	}
+
+	&-end {
+		@include flex(flex, row, wrap, flex-end, center);
+	}
+
+}
