@@ -1,4 +1,4 @@
-# FE-boilerplate-2
+# FE-boilerplate-3
 A simple boilerplate for Front-end web development, powered by Gulp (version 4.x.x.), Sass and Flexbox.
 
 ## Compatibility
