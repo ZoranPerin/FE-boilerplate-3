@@ -35,7 +35,7 @@ The row is a mandatory element which wraps columns. The row is defined with clas
   - `.around` - make space/distance between the elements
 
 ### Column
-A column is a basic unit that forms a grid. FE-boilerplate-2 uses 12-columns grid, although it can be changed through configuration file (look for `$grid-columns in` `_variables.scss`). The column can be defined with a different set of classes which will be `active` on certain breakpoint (width of the screen), so you can chain classes in order to have different behavior on different screen width. The default set of classes are the ones with `-lg`. Saying that FE-boilerplate-2 is NOT based on mobile-first approach, but on desktop-first. So, column (element) will be always defined as, for example, `.col-lg-5`. That means that given column will occupy 5/12 of parent's width. If you want this element to occupy, let say 8/12 on mobile, you will use `.col-lg-5 col-xs-8`. In this way, you are in control of each element on each screen size.
+A column is a basic unit that forms a grid. FE-boilerplate-3 uses 12-columns grid, although it can be changed through configuration file (look for `$grid-columns in` `_variables.scss`). The column can be defined with a different set of classes which will be `active` on certain breakpoint (width of the screen), so you can chain classes in order to have different behavior on different screen width. The default set of classes are the ones with `-lg`. Saying that FE-boilerplate-3 is NOT based on mobile-first approach, but on desktop-first. So, column (element) will be always defined as, for example, `.col-lg-5`. That means that given column will occupy 5/12 of parent's width. If you want this element to occupy, let say 8/12 on mobile, you will use `.col-lg-5 col-xs-8`. In this way, you are in control of each element on each screen size.
 
 If you don't want to use defined widths of elements, you can use col-auto that will distribute widths of all elements equal to the parent's width.
 
@@ -47,4 +47,4 @@ If you want to unset offset just use `.col-md-offset-0`, for example. That means
 The gap is a space between two columns. Each column has half of total space between columns on its left and right, so two columns create a gap that is defined in `_variables.scss` where you can adjust gap size if needed. Variable in charge for that is `$grid-column-gutter`.
 
 ## Mixins
-FE-boilerplate-2 comes with a collection of Sass mixins that are often used and needed in order to follow DRY principle.
+FE-boilerplate-3 comes with a collection of Sass mixins that are often used and needed in order to follow DRY principle.
