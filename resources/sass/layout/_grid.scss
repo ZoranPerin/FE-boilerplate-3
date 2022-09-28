@@ -205,7 +205,7 @@
 	@include breakpoint(xs) {
 
 		&-lg,
-		&-mg,
+		&-md,
 		&-sm {
 
 			@for $i from 1 through $grid-columns {

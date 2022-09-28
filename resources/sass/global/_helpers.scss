@@ -107,16 +107,36 @@
 		@include flex(flex, row, wrap, flex-start, center);
 	}
 
-	&-space {
-		@include flex(flex, row, wrap, space-between, center);
-	}
-
-    &-around {
-		@include flex(flex, row, wrap, space-around, center);
-	}
-
 	&-end {
 		@include flex(flex, row, wrap, flex-end, center);
+	}
+
+	&-center {
+		@include flex(flex, row, wrap, center, center);
+	}
+
+	&-left {
+		@include flex(flex, row, wrap, left, center);
+	}
+
+	&-right {
+		@include flex(flex, row, wrap, right, center);
+	}
+
+	&-space {
+
+		&-between {
+			@include flex(flex, row, wrap, space-between, center);
+		}
+
+		&-around {
+			@include flex(flex, row, wrap, space-around, center);
+		}
+
+		&-evenly {
+			@include flex(flex, row, wrap, space-evenly, center);
+		}
+
 	}
 
 }
